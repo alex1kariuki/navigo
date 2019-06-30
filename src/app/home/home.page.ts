@@ -1,26 +1,35 @@
 import { Component } from '@angular/core';
-import mapboxgl from 'mapbox-gl/dist/mapbox-gl.js';
-import {environment} from '../../environments/environment';
+import * as mapboxgl from 'mapbox-gl';
+import { environment } from '../../environments/environment';
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  map: mapboxgl.Map;
+  style = 'mapbox://styles/mapbox/outdoors-v9';
+  lat = -1.239362;
+  lng = 36.726713;
+
   constructor() {
-    // this.executemap();
+
     /*Initializing Map*/
     mapboxgl.accessToken = environment.mapboxToken;
-
+  }
+  // tslint:disable-next-line:use-life-cycle-interface
+  ngOnInit() {
+    this.executemap();
+    console.log('oya');
+    console.log(this.map);
   }
   executemap() {
-  const map = new mapboxgl.Map({
-      style: 'mapbox://styles/mapbox/light-v9',
-      zoom: 16,
-      pitch: 80,
-      minZoom: 7.5, // restrict map zoom - buildings not visible beyond 13
-      maxZoom: 17,
-      container: 'map'
+    this.map = new mapboxgl.Map({
+      container: 'map',
+      style: this.style,
+      zoom: 13,
+      center: [this.lng, this.lat]
     });
   }
 }

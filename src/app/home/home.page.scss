@@ -2,7 +2,6 @@
     margin: -5px; 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border-color: black; 
     background-color: #2A2E43; 
     color: white;
     height: 100px;
@@ -26,4 +25,18 @@ margin-top: -25px;
 }
 #description{
     font-size: 18px;
+}
+.fab{
+ --background: #f4f5f8;
+ color: black;
+height: 52px;
+width: 52px;
+}
+#map{
+    height: 100%;
+    width: 100%;
+}
+.fab-item{
+    --background: transparent;
+    margin-left: 2px;
 }
