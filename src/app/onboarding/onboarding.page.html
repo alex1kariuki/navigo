@@ -1,11 +1,11 @@
 <ion-content>
-  <ion-slides>
-    <ion-slide>
+  <ion-slides class="slider">
+    <ion-slide class="first_slide" style="background-image: url(../assets/images/station.jpg)">
       <div>
         <!-- Title -->
-        <p>Welcome to Navigo</p>
-        <p>The best way to navigate your world and discover new places. Lets get started!</p>
-        <p>CONTINUE WITH:</p>
+        <p class="title">Welcome to Navigo</p>
+        <p class="start description">The best way to navigate your world and discover new places. Lets get started!</p>
+        <p class="start footer">CONTINUE WITH:</p>
 
         <!-- Buttons -->
         <ion-button>EMAIL</ion-button>
@@ -60,7 +60,7 @@
           <!-- Text -->
           <p>Welcome</p>
           <p>If you’re offered a seat on a rocket ship, don’t ask what seat! Just get on.</p>
-          <ion-button>NEXT</ion-button>
+          <ion-button routerLink="/home">NEXT</ion-button>
       </div>
     </ion-slide>
   </ion-slides>
