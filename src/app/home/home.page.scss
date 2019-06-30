@@ -1,1 +1,29 @@
+.bottom-sheet{
+    margin: -5px; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-color: black; 
+    background-color: #2A2E43; 
+    color: white;
+    height: 100px;
+}
+.top-bar{
+   background-color: #3ACCE1; 
+   height: 10px; 
+   width:100%;
+}
+.text{
+    opacity: 0.5;
+}
+#number{
+font-size: 62px;
+margin-top: -25px;
 
+}
+#title{
+    font-size: 22px;
+    margin-top: -10px;
+}
+#description{
+    font-size: 18px;
+}
