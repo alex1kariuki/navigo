@@ -1,14 +1,29 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <!-- Search bar -->
+  <ion-searchbar animated></ion-searchbar>
+  <!-- Map -->
 </ion-content>
+<!-- Footer -->
+<ion-footer>
+  <ion-card class="bottom-sheet" no-padding>
+    <div class="top-bar"></div>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+           <!-- icon -->
+          <ion-col size="2">
+              <ion-icon name="arrow-up" class="text"></ion-icon>
+          </ion-col>
+            <!-- content -->
+          <ion-col size="7">
+              <p id="title">Nearby</p>
+              <p class="text">Food, drinks, places</p>
+          </ion-col>
+          <ion-col size="3">
+            <p class="text" id="number">18</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-footer>
