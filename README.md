@@ -1,5 +1,5 @@
-# navigo
-Implementation of the designs from https://www.xdguru.com/navigo-free-ui-kit/
+# Navigo
+This is an app built from the inspiration of the designs from https://www.xdguru.com/navigo-free-ui-kit/. Built in Ionic.
 
 
 Screenshot 1
